@@ -1,0 +1,22 @@
+*{  font-size: 30px;  
+    font-weight: 600;
+   }
+h4{   color: brown; 
+       font-size: larger; 
+         font-style: italic;
+   }
+h1{ font-weight: 700;
+     font-style: italic;
+   }
+.myclass{color: red; 
+          font-size: larger;
+            font-style: italic;
+           }
+#myid{color: royalblue; 
+      font-style: italic; 
+        font-size: larger;
+}        
+h5,p{color:rgb(0, 0, 0);
+       font-size: larger; 
+         font-style: italic;
+        }
