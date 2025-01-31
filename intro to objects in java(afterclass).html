@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sumOfNumbers">execute</button>
+    <script>
+        function sumOfNumbers(...numbers) {
+            return numbers.reduce((sum, num) => sum + num, 0);
+        }
+        
+        function printTrigValues(degrees) {
+            let radians = degrees * (Math.PI / 180); 
+            console.log(`Trigonometric values for ${degrees}°:`);
+            console.log(`sin(${degrees}) = ${Math.sin(radians).toFixed(4)}`);
+            console.log(`cos(${degrees}) = ${Math.cos(radians).toFixed(4)}`);
+            console.log(`tan(${degrees}) = ${Math.tan(radians).toFixed(4)}`);
+        }
+        
+       
+        </script>
+</body>
+</html>
