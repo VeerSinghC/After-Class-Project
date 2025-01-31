@@ -7,22 +7,18 @@
 </head>
 <button onclick="generateRandomNumbers">EXECUTE</button>
 <body>
-    <script>// Function to generate a random set of numbers
+    <script>
         function generateRandomNumbers(count) {
             let numbers = [];
             for (let i = 0; i < count; i++) {
-                numbers.push(Math.floor(Math.random(22) * 100)); // Random numbers between 0-99
+                numbers.push(Math.floor(Math.random(22) * 100)); 
             }
             return numbers;
         }
-        let randomNumber = Math.random(55) * 100;  // Random number between 0-100
+        let randomNumber = Math.random(55) * 100;
         let roundedNumber = Math.round(randomNumber);
         let currentDate = new Date();
-        // Output results
-        console.log("Random Set of Numbers: ", generateRandomNumbers(5)); // Generates 5 random numbers
-        console.log("Random Number: ", randomNumber);
-        console.log("Rounded Random Number: ", roundedNumber);
-        console.log("Current Date and Time: ", currentDate);
+  
         </script>
 </body>
 </html>
