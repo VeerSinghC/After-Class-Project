@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onclick="multiply()">EXECUTE</button>
+<body>
+    <script>function multiply(a, b) {
+        if (b === undefined) {
+            return "Error: Second parameter is missing!";
+        }
+        return a * b;
+    }
+    
+    console.log(multiply(5, 3)); // Output: 15
+    console.log(multiply(7));    // Output: "Error: Second parameter is missing!"
+    </script>
+</body>
+</html>
