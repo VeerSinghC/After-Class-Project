@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array Mapping and Sorting</h2>
+    <button onclick="ascending()">Low-High</button>
+    <button onclick="descending()">High-Low</button>
+    <p id="demo"></p>
+    <script>
+        var price = [999, 299, 452, 899, 799]
+        document.getElementById("demo").innerHTML = price;
+        function ascending() {
+            price.sort(function(a,b){return a-b})
+            document.getElementById("demo").innerHTML = price;
+        }
+        function descending() {
+            price.sort(function(a,b){return b-a})
+            document.getElementById("demo").innerHTML = price;
+        }
+
+        
+    </script>
+    
+</body>
+</html>
