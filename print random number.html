@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers</title>
+</head>
+<body>
+    <h2>Random Numbers</h2>
+    <p id="output"></p>
+
+    <script>
+        let count = 0;
+        let limit = 5; // Change this to print more numbers
+        let outputText = "";
+
+        while (count < limit) {
+            let randomNumber = Math.floor(Math.random() * 100) + 1;
+            outputText += "Random Number " + (count + 1) + ": " + randomNumber + "<br>";
+            count++;
+        }
+
+        document.getElementById("output").innerHTML = outputText;
+    </script>
+</body>
+</html>
