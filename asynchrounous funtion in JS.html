@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await Example</title>
+</head>
+<body>
+
+    <h2>Fetching Data...</h2>
+    <p id="result"></p>
+
+    <script>
+     
+        function fetchData() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Data received successfully!");
+                }, 2000);
+            });
+        }
+
+        async function displayData() {
+            let data = await fetchData();
+            document.getElementById("result").innerText = data;
+        }
+
+        displayData();
+    </script>
+
+</body>
+</html>
