@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const age = parseInt(document.getElementById("age").value);
+
+      if (name === "") {
+        alert("Name cannot be empty.");
+        return false;
+      }
+
+      if (isNaN(age) || age < 18) {
+        alert("You must be 18 years or older to log in.");
+        return false;
+      }
+
+      alert("Login successful!");
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h2>Login Form</h2>
+  <form onsubmit="return validateForm()">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" /><br /><br />
+
+    <label for="age">Age:</label><br />
+    <input type="number" id="age" name="age" /><br /><br />
+
+    <input type="submit" value="Login" />
+  </form>
+</body>
+</html>
