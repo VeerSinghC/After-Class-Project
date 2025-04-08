@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container setup */
+    .container {
+      display: grid;
+      grid-template-rows: auto auto;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .navbar div {
+      color: white;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .navbar div:hover {
+      background-color: #575757;
+    }
+
+    /* Banner image */
+    .banner {
+      width: 100%;
+      height: 1000px;
+      background-image: url('https://imageio.forbes.com/specials-images/imageserve/607f03cd14a3c2843c2b8664/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds'); /* Replace with your own banner image URL */
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div>Home</div>
+      <div>About</div>
+      <div>Services</div>
+      <div>Contact</div>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="banner"></div>
+  </div>
+
+</body>
+</html>
